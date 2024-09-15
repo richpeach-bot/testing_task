@@ -1,7 +1,8 @@
 $fonts: (
   "Regular": 400,
-  "Bold": 600,
-  "Black": 900,
+  "Semibold": 600,
+  "Bold": 700,
+  "Heavy": 800,
 );
 
 @each $name, $weight in $fonts {
