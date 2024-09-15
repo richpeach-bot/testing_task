@@ -1,0 +1,16 @@
+$fonts: (
+  "Regular": 400,
+  "Bold": 600,
+  "Black": 900,
+);
+
+@each $name, $weight in $fonts {
+  @font-face {
+    font-family: Lato;
+    src: url("../fonts/Lato#{$name}.woff2") format("woff2"),
+         url("../fonts/Lato#{$name}.woff") format("woff");
+    font-weight: $weight;
+    font-style: normal;
+    font-display: swap;
+  }
+};
