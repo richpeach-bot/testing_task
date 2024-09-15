@@ -237,3 +237,147 @@
     }
   }
 }
+
+.footer {
+  background-color: #3D4050;
+  padding: 30px 0;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @media (min-width: 460px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    @media (min-width: 1200px) {
+      gap: 80px;
+      justify-content: center;
+    }
+  }
+  &__item {
+    position: relative;
+    &::after {
+      content: '';
+      background-color: #C3C3C3;
+      height: 1px;
+      width: 40px;
+      position: absolute;
+      bottom: -16px;
+      left: 50%;
+      transform: translateX(-50%);
+      @media (min-width: 460px) {
+        height: 100%;
+        width: 1px;
+        left: auto;
+        right: -31px;
+        bottom: auto;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      @media (min-width: 900px) {
+        top: 37%;
+        height: 18px;
+        right: -30px;
+      }
+      @media (min-width: 1200px) {
+        top: 50%;
+        right: -40px;
+      }
+    }
+    &:first-child {
+      order: 3;
+      @media (min-width: 460px) {
+        flex: 0 0 100%;
+      }
+
+      @media (min-width: 1200px) {
+        flex: 0 0 auto;
+        order: 1;
+      }
+    }
+    &:first-child::after{
+      display: none;
+      @media (min-width: 900px) {
+        display: block;
+      }
+    }
+
+    &:last-child {
+      @media (min-width: 460px) {
+        margin-left: 30px;
+      }
+      @media (min-width: 1200px) {
+        margin-left: 0;
+      }
+    }
+    &:last-child::after {
+      @media (min-width: 460px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.copy {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    order: 2;
+  }
+  @media (min-width: 990px) {
+    gap: 20px;
+  }
+  @media (min-width: 1200px) {
+    gap: 38px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    padding-left: 30px;
+    position: relative;
+    color: #C3C3C3;
+    font-size: 13px;
+    line-height: 16px;
+    &::before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__link {
+    color: inherit;
+    transition: all .3;
+    &:hover {
+      color: #dedede;
+    }
+  }
+
+  .list__item--qiwi::before {
+    background-image: url('../images/qiwi-icon.svg');
+  }
+  .list__item--ymoney::before {
+    background-image: url('../images/ymoney-icon.svg');
+  }
+  .list__item--wmoney::before {
+    background-image: url('../images/webmoney-icon.svg');
+  }
+  .list__item--email::before {
+    background-image: url('../images/email-icon.svg');
+  }
+  .list__item--vk::before {
+    background-image: url('../images/vk-icon.svg');
+  }
+}
