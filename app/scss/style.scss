@@ -303,6 +303,9 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
+  @media (min-width: 1200px) {
+    justify-content: start;
+  }
   &__item {
     align-self: center;
     flex: 0 0 166px;
@@ -390,6 +393,11 @@
     }
     &:last-child .steps__item-icon::after {
       display: none;
+    }
+    &:nth-child(5n) .steps__item-icon::after {
+      @media (min-width: 1200px) {
+        display: none;
+      }
     }
   }
 }
