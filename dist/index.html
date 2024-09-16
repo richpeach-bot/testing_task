@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorem ipsum</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a href="/" class="header__logo">
+          <img src="images/logo.svg" alt="LOREMIPSUM.NET">
+        </a>
+
+        <nav class="menu">
+          <button class="menu__btn"></button>
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a href="#" class="menu__list-link">Бизнес</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#" class="menu__list-link">О нас</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#" class="menu__list-link">Цены</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#order" class="menu__list-link">Оформить заказ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">
+          <span class="hero__title-accent">Lorem ipsum</span> dolor sit ametconsectetur <span class="hero__title-accent">adipiscing</span>
+        </h1>
+
+        <div class="hero__list">
+          <p class="hero__list-title">
+            At vero eos et accusamus et iusto odio dignissimos ducimus!
+          </p>
+          <ul class="hero__list-list">
+            <li class="hero__list-item">Totam rem aperiam eaque ipsa</li>
+            <li class="hero__list-item">Sit voluptatem accusantium doloremque laudantium</li>
+            <li class="hero__list-item">Sed ut perspiciatis, unde omnis iste natus error</li>
+          </ul>
+        </div>
+
+        <div class="hero__cta">
+          <a href="#order" class="hero__cta-order">Заказать</a>
+          <a href="#" class="hero__cta-more">Подробнее</a>
+        </div>
+      </div>
+    </section>
+    <section class="order" id="order">
+      <div class="container">
+        <div class="order__headings">
+          <h2 class="order__title">
+            Оформление <span class="order__title-accent">Заказа</span>
+          </h2>
+          <p class="order__subtitle">
+            Перед заполнением формы ознакомьтесь с нашей схемой работы!
+          </p>
+        </div>
+
+        <div class="order__steps steps">
+          <div class="steps__item">
+            <div class="steps__item-icon steps__item-icon--search"></div>
+            <p class="steps__item-descr">Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="steps__item">
+            <div class="steps__item-icon steps__item-icon--percent"></div>
+            <p class="steps__item-descr">Сonsecteturadipiscing elit</p>
+          </div>
+          <div class="steps__item">
+            <div class="steps__item-icon steps__item-icon--file"></div>
+            <p class="steps__item-descr">Sed do eiusmod tempor</p>
+          </div>
+          <div class="steps__item">
+            <div class="steps__item-icon steps__item-icon--email"></div>
+            <p class="steps__item-descr">Esse cillum dolore eu fugiat</p>
+          </div>
+          <div class="steps__item">
+            <div class="steps__item-icon steps__item-icon--money"></div>
+            <p class="steps__item-descr">Excepteur sint occaecat cupidatat non proident</p>
+          </div>
+        </div>
+
+        <form class="order__form form">
+          <div class="form__wrapper">
+            <select class="form__input-select" name="select-system">
+              <option value="" disabled selected>Выберите тип системы</option>
+              <option value="value1">Sed ut perspiciatis</option>
+              <option value="value2">Nemo enim ipsam</option>
+              <option value="value3">Et harum quidem</option>
+              <option value="value4">Temporibus autem</option>
+              <option value="value5">Itaque earum rerum</option>
+              <option value="value6">Vero quae est</option>
+              <option value="value7">Beatae neque minus </option>
+            </select>
+
+            <input class="form__input" type="email" name="email" placeholder="Ваш e-mail">
+            <input class="form__input" type="text" name="name" placeholder="Ваше имя">
+
+            <div class="form__input-range">
+              <span>Sed ut perspiciatis, unde omnis iste natus</span>
+              <input type="range">
+            </div>
+
+            <div class="form__input-file">
+              <input type="file" name="send-file" id="input-file">
+              <label for="input-file">Прикрепить файл</label>
+            </div>
+          </div>
+          <button class="form__btn">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <p class="footer__item copy">
+          &copy; 2018 «LoremIpsum.net» Все права защищены.
+        </p>
+
+        <ul class="footer__item list billing-systems">
+          <li class="list__item list__item--qiwi">Qiwi wallet</li>
+          <li class="list__item list__item--ymoney">Yandex Money</li>
+          <li class="list__item list__item--wmoney">Web Money</li>
+        </ul>
+
+        <ul class="footer__item list">
+          <li class="list__item list__item--email">
+            <a href="mailto:info@ipsum228.com" class="list__link">info@ipsum228.com</a>
+          </li>
+          <li class="list__item list__item--vk">
+            <a href="#" class="list__link">Мы вконтакте</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
