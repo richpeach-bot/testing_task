@@ -530,6 +530,10 @@
     border-radius: 4px;
     padding: 14px 50px;
     width: 100%;
+    cursor: pointer;
+    &:hover{
+      background-color: #378dc6;
+    }
     @media (min-width: 768px) {
       padding: 18px 125px;
       width: auto;
