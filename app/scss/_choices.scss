@@ -14,6 +14,12 @@
       top: calc(100% - 38px);
     }
   }
+  &.is-flipped {
+    & .choices__list--dropdown,
+    & .choices__list[aria-expanded] {
+      top: auto;
+    }
+  }
   &__list {
     text-align: start;
   }
