@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lorem ipsum</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -58,6 +59,70 @@
         </div>
       </div>
     </section>
+    <section class="order">
+      <div class="container">
+        <div class="order__headings">
+          <h2 class="order__title">
+            Оформление <span class="order__title-accent">Заказа</span>
+          </h2>
+          <p class="order__subtitle">
+            Перед заполнением формы ознакомьтесь с нашей схемой работы!
+          </p>
+        </div>
+
+        <div class="order__steps steps">
+          <div class="steps__item">
+            <div class="steps__item-icon steps__item-icon--search"></div>
+            <p class="steps__item-descr">Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="steps__item">
+            <div class="steps__item-icon steps__item-icon--percent"></div>
+            <p class="steps__item-descr">Сonsecteturadipiscing elit</p>
+          </div>
+          <div class="steps__item">
+            <div class="steps__item-icon steps__item-icon--file"></div>
+            <p class="steps__item-descr">Sed do eiusmod tempor</p>
+          </div>
+          <div class="steps__item">
+            <div class="steps__item-icon steps__item-icon--email"></div>
+            <p class="steps__item-descr">Esse cillum dolore eu fugiat</p>
+          </div>
+          <div class="steps__item">
+            <div class="steps__item-icon steps__item-icon--money"></div>
+            <p class="steps__item-descr">Excepteur sint occaecat cupidatat non proident</p>
+          </div>
+        </div>
+
+        <form class="order__form form">
+          <div class="form__wrapper">
+            <select class="form__input-select" name="select-system">
+              <option value="" disabled selected>Выберите тип системы</option>
+              <option value="value1">Sed ut perspiciatis</option>
+              <option value="value2">Nemo enim ipsam</option>
+              <option value="value3">Et harum quidem</option>
+              <option value="value4">Temporibus autem</option>
+              <option value="value5">Itaque earum rerum</option>
+              <option value="value6">Vero quae est</option>
+              <option value="value7">Beatae neque minus </option>
+            </select>
+
+            <input class="form__input" type="email" name="email" placeholder="Ваш e-mail">
+            <input class="form__input" type="text" name="name" placeholder="Ваше имя">
+
+            <div class="form__input-range">
+              <span>Sed ut perspiciatis, unde omnis iste natus</span>
+              <input type="range">
+            </div>
+
+            <div class="form__input-file">
+              <input type="file" name="send-file" id="input-file">
+              <label for="input-file">Прикрепить файл</label>
+            </div>
+          </div>
+          <button class="form__btn">Отправить</button>
+        </form>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container">
@@ -83,6 +148,7 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 </html>
